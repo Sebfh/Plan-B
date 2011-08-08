@@ -1,3 +1,3 @@
-== Welcome to Plan B
+# Welcome to Plan B
 
 project by Seb en Wishjuh
