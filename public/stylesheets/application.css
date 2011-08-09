@@ -56,3 +56,11 @@ div.menu span.active {
 span.column_header {
 	vertical-align: sub;
 }
+img.avatar {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    float: left;
+    margin: 1px 10px 0 0;
+    padding: 4px;
+    width: 32px;
+}
