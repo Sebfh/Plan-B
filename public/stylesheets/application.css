@@ -39,3 +39,17 @@ body {
 	color: #4083A9;
 	text-decoration: none;
 }
+div.menu {
+	padding: 10px;
+}
+div.menu span {
+	color: #9F9E9C;
+	padding:5px;
+	float:left;
+	margin-right:20px;
+}
+div.menu span.active {
+	background-color: #9F9E9C;
+	color: #EBEBE6;
+	border-radius: 3px 3px 3px 3px;
+}
