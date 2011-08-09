@@ -1,0 +1,5 @@
+De volgende opdrachten op volgorde uitvoeren in Terminal
+=========================================================================
+1. /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+2. brew install mysql
+3. gem install mysql2
