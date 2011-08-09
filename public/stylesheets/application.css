@@ -9,7 +9,7 @@ body {
 	background-color: #9F9E9C;
 	color: #171717;
 	font-weight: bold;
-	padding: 10px;
+	 padding: 10px 12px 3px;
 }
 .event_item {
 	background-color: #EBEBE6;
@@ -52,4 +52,7 @@ div.menu span.active {
 	background-color: #9F9E9C;
 	color: #EBEBE6;
 	border-radius: 3px 3px 3px 3px;
+}
+span.column_header {
+	vertical-align: sub;
 }
