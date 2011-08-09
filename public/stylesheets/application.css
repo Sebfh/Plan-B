@@ -1,0 +1,41 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #171717;
+	color: #9F9E9C;
+	margin:0;
+	font-size:0.8em;
+	}
+.event_list_header {
+	background-color: #9F9E9C;
+	color: #171717;
+	font-weight: bold;
+	padding: 10px;
+}
+.event_item {
+	background-color: #EBEBE6;
+	color: #9F9E9C;
+	padding: 10px;
+	border-top: 1px solid #9F9E9C;
+}
+.selected {
+	background-color: #e6e3cd;
+}
+.event_item div.date {
+	width: 50px;
+	text-align:center;
+	float:left;
+	color:#171717;
+	 margin: 0 5px;
+}
+.event_item div.smiles {
+	width: 75px;
+	float:right;
+}
+.event_item div.description {
+	float: left;
+    padding-left: 30px;
+}
+.event_item div.description span.view a {
+	color: #4083A9;
+	text-decoration: none;
+}
