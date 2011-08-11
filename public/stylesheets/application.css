@@ -65,28 +65,11 @@ img.avatar {
     width: 32px;
 }
 
-
 /******************
  Login form styles
  ******************/
 
-/* Global */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body { 
-  background-color: #f9f9f9;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  color: #000000;
-  text-align: center;
-}
-
-#page {
-  width: 100%;
-}
+h1#logo-plan-b { text-align: center;}
 
 /* Form base */
 
@@ -96,7 +79,7 @@ html, body {
 
 form#login input[type="email"], input[type="password"] {
   display: block;
-  width: 85%;
+  width: 280px;
   margin: 0 auto;
   padding: 10px; 
   font-size: 16px;
@@ -115,7 +98,7 @@ form#login input[type="password"] {
 
 form#login .button {
   display: block;
-  width: 91%;
+  width: 302px;           /* if border -2px */
   margin: 15px auto;
   padding: 10px;
   background-color: #ff9e00;
@@ -125,4 +108,15 @@ form#login .button {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   -webkit-appearance: none;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  form#login input[type="email"], input[type="password"] {
+    width: 440px;
+  }
+  form#login .button {
+    width: 462px;
+  }
 }
