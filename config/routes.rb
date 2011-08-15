@@ -1,4 +1,12 @@
 Planb::Application.routes.draw do
+  resources :reactions
+
+  resources :locations
+
+  resources :plans
+
+  resources :users
+
   resources :pages
 
   # The priority is based upon order of creation:

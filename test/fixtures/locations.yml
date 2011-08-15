@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  plan_id: 1
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  plan_id: 1
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
