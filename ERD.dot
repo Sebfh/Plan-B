@@ -1,0 +1,58 @@
+digraph Planb {
+  rankdir = "LR"; ranksep = "0.5"; nodesep = "0.4"; pad = "0.4,0.4"; margin = "0,0"; concentrate = "true"; labelloc = "t"; fontsize = "13"; fontname = "Arial Bold";
+  node [shape = "Mrecord", fontsize = "10", fontname = "Arial", margin = "0.07,0.05", penwidth = "1.0"];
+  edge [fontname = "Arial", fontsize = "7", dir = "both", arrowsize = "0.9", penwidth = "1.0", labelangle = "32", labeldistance = "1.8"];
+  label = "Planb domain model\n\n";
+  m_Location [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Location</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="address">address <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="latitude">latitude <font face="Arial Italic" color="grey60">float</font></td></tr>
+  <tr><td align="left" width="130" port="longitude">longitude <font face="Arial Italic" color="grey60">float</font></td></tr>
+</table>
+>];
+  m_Page [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Page</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="body">body <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="title">title <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+  m_Plan [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Plan</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="date">date <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">text</font></td></tr>
+  <tr><td align="left" width="130" port="title">title <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+  m_Reaction [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Reaction</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="attending">attending <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="message">message <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+  m_User [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">User</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="email">email <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="image_uri">image_uri <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+  m_Plan -> m_Location [arrowhead = "none", arrowtail = "none", weight = "2"]
+  m_User -> m_Plan [arrowhead = "normal", arrowtail = "none", weight = "2"]
+  m_Plan -> m_Reaction [arrowhead = "normal", arrowtail = "none", weight = "2"]
+  m_User -> m_Reaction [arrowhead = "normal", arrowtail = "none", weight = "2"]
+}
