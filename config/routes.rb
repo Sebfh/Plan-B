@@ -8,7 +8,10 @@ Planb::Application.routes.draw do
   resources :users
 
   resources :pages
-
+  
+  match '/detail', :to => 'pages#detail'
+  match '/dashboard', :to => 'pages#dashboard'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
