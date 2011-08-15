@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/pages/welcome.html.erb</string>
+	<string>app/models/page.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -49,6 +49,20 @@
 				<integer>12</integer>
 				<key>line</key>
 				<integer>5</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/models/page.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -173,6 +187,7 @@
 		<string>webbynode.info</string>
 		<string>get_mysql_working.info</string>
 		<string>app/controllers/pages_controller.rb</string>
+		<string>app/models/page.rb</string>
 		<string>app/views/pages/dashboard.html.erb</string>
 		<string>app/views/pages/detail.html.erb</string>
 		<string>app/views/pages/welcome.html.erb</string>
@@ -184,6 +199,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{318, 258}, {840, 469}}</string>
+	<string>{{523, 381}, {840, 469}}</string>
 </dict>
 </plist>
