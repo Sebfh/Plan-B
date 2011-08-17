@@ -1,30 +1,30 @@
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	background-color: #171717;
-	color: #9F9E9C;
+/*	background-color: #171717;
+	color: #9F9E9C;*/
 	margin:0;
-	font-size:0.8em;
+/*	font-size:0.8em;*/
 	}
 .event_list_header {
-	background-color: #9F9E9C;
-	color: #171717;
+/*	background-color: #9F9E9C;
+	color: #171717;*/
 	font-weight: bold;
 	 padding: 10px 12px 3px;
 }
 .event_item {
-	background-color: #EBEBE6;
-	color: #9F9E9C;
+/*	background-color: #EBEBE6;
+	color: #9F9E9C;*/
 	padding: 10px;
 	border-top: 1px solid #9F9E9C;
 }
 .selected {
-	background-color: #e6e3cd;
+/*	background-color: #e6e3cd;*/
 }
 .event_item div.date {
 	width: 50px;
 	text-align:center;
 	float:left;
-	color:#171717;
+/*	color:#171717;*/
 	 margin: 0 5px;
 }
 .event_item div.smiles {
@@ -36,21 +36,21 @@ body {
     padding-left: 30px;
 }
 .event_item div.description span.view a {
-	color: #4083A9;
+/*	color: #4083A9;*/
 	text-decoration: none;
 }
 div.menu {
 	padding: 10px;
 }
 div.menu span {
-	color: #9F9E9C;
+/*	color: #9F9E9C;*/
 	padding:5px;
 	float:left;
 	margin-right:20px;
 }
 div.menu span.active {
-	background-color: #9F9E9C;
-	color: #EBEBE6;
+/*	background-color: #9F9E9C;
+	color: #EBEBE6;*/
 	border-radius: 3px 3px 3px 3px;
 }
 span.column_header {
@@ -82,7 +82,7 @@ form#login input[type="email"], input[type="password"] {
   width: 280px;
   margin: 0 auto;
   padding: 10px; 
-  font-size: 16px;
+/*  font-size: 16px;*/
   border: 1px solid #ccc;
   background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
   -webkit-border-radius: 8px 8px 0px 0px;
@@ -101,10 +101,10 @@ form#login .button {
   width: 302px;           /* if border -2px */
   margin: 15px auto;
   padding: 10px;
-  background-color: #ff9e00;
+/*  background-color: #ff9e00;*/
   border: none;
-  font-size: 16px;
-  color: #fff;
+/*  font-size: 16px;*/
+/*  color: #fff;*/
   -webkit-border-radius: 8px;
   border-radius: 8px;
   -webkit-appearance: none;
