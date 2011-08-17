@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/models/page.rb</string>
+	<string>config/initializers/omniauth.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -74,14 +74,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>55</integer>
+				<integer>112</integer>
 				<key>line</key>
-				<integer>12</integer>
+				<integer>21</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>7</integer>
 		</dict>
 		<key>app/views/pages/dashboard.html.erb</key>
 		<dict>
@@ -153,6 +153,34 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>config/initializers/omniauth.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>38</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>config/routes.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>31</integer>
+				<key>line</key>
+				<integer>15</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>22</integer>
+		</dict>
 		<key>get_mysql_working.info</key>
 		<dict>
 			<key>caret</key>
@@ -188,17 +216,19 @@
 		<string>get_mysql_working.info</string>
 		<string>app/controllers/pages_controller.rb</string>
 		<string>app/models/page.rb</string>
+		<string>config/initializers/omniauth.rb</string>
 		<string>app/views/pages/dashboard.html.erb</string>
 		<string>app/views/pages/detail.html.erb</string>
 		<string>app/views/pages/welcome.html.erb</string>
 		<string>app/views/pages/login.html.erb</string>
 		<string>app/views/layouts/application.html.erb</string>
+		<string>config/routes.rb</string>
 		<string>Gemfile</string>
 		<string>config/database.yml</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{523, 381}, {840, 469}}</string>
+	<string>{{488, 174}, {840, 469}}</string>
 </dict>
 </plist>
