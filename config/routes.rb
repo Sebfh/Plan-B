@@ -9,8 +9,11 @@ Planb::Application.routes.draw do
 
   resources :pages
   
-  match '/detail', :to => 'pages#detail'
-  match '/dashboard', :to => 'pages#dashboard'
+  # match '/detail', :to => 'pages#detail'
+  #   match '/dashboard', :to => 'pages#dashboard'
+  
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy", :as => :signout
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -61,7 +64,7 @@ Planb::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-root :to => "pages#login"
+root :to => "users#dashboard"
 
   # See how all your routes lay out with "rake routes"
 

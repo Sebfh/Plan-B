@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110815192254) do
+ActiveRecord::Schema.define(:version => 20110816181339) do
 
   create_table "locations", :force => true do |t|
     t.integer  "plan_id"
@@ -50,9 +50,10 @@ ActiveRecord::Schema.define(:version => 20110815192254) do
     t.string   "name"
     t.string   "email"
     t.string   "image_uri"
-    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "provider"
+    t.string   "uid"
   end
 
 end
