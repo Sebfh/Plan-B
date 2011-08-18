@@ -88,7 +88,7 @@ div#flash_notice {
 	border-radius: 0px 3px 0px 3px;
 }
 img#planblogo {
-	margin: 0px 5px 0px 5px;
+	margin: 0 5px;
 }
 div#content {
 	padding:10px;
@@ -101,13 +101,6 @@ div#content {
 #app-bar {
   width: 100%;
   background: #434950;
-}
-
-h1#logo {
-  font-size: 18px;
-  font-variant: small-caps;
-  padding: 15px;
-  color: #fff;
 }
 
 #fb-button img {
@@ -128,14 +121,22 @@ a#signout {
   border-bottom: 1px dotted #fff;
 }
 
+/* User image */
+
+.user-img {
+  padding: 5px 5px 15px;
+  background: #fff;
+  margin: 10px;
+  float: left;
+}
+
+
  /* Media Query */
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (min-width: 480px) and (orientation: landscape) {
   #fb-button img {
     margin-top: 60px;
   }
-
-
 
 
 
