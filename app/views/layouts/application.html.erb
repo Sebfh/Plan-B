@@ -24,16 +24,11 @@
 		<% flash.each do |name, msg| %>
 			<%= content_tag :div, msg, :id => "flash_#{name}" %>
 		<% end %>
-		<div id="user_nav" style="display:none;">
-			<% if current_user %>
-			Welcome <%= image_tag(current_user.image_uri) %> <%= current_user.name %>!
-			<% end %>
-		</div>
 		<div id="content">
 			<% if !current_user %>
-			<%= link_to(image_tag("/images/fb-connect-large.png"), "/auth/facebook", :id => 'fb-button') %>
+				<%= link_to(image_tag("/images/fb-connect-large.png"), "/auth/facebook", :id => 'fb-button') %>
 			<% else %>
-			<%= yield %>
+				<%= yield %>
 			<% end %>
 		</div>
 	</div>
