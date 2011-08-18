@@ -90,6 +90,9 @@ div#flash_notice {
 img#planblogo {
 	margin: 0px 5px 0px 5px;
 }
+div#content {
+	padding:10px;
+}
 
 /******************
  Login page styles
