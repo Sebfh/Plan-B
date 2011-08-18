@@ -14,7 +14,8 @@
 </head>
 <body>
 	<div id="container">
-		<div id="app-bar"><h1 id="logo">plan B</h1>
+		<div id="app-bar">
+			<%= image_tag("planb-logo.png", :id => 'planblogo') %>
 			<% if current_user %>	
 				<%= link_to "sign out", signout_path, :id => 'signout' %>
 				<% end %>

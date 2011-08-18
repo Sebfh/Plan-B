@@ -79,7 +79,17 @@ img.avatar {
     padding: 4px;
     width: 32px;
 }
-
+div#flash_notice {
+	color:#C2C27B;
+	padding: 5px;
+	text-align: center;
+	background-color: #FFFDC8;
+	border-bottom: 2px solid #EEEE9B;
+	border-radius: 0px 3px 0px 3px;
+}
+img#planblogo {
+	margin: 0px 5px 0px 5px;
+}
 
 /******************
  Login page styles
@@ -87,7 +97,7 @@ img.avatar {
 
 #app-bar {
   width: 100%;
-  background: #000;
+  background: #434950;
 }
 
 h1#logo {
