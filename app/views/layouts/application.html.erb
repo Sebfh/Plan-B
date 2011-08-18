@@ -14,9 +14,9 @@
 </head>
 <body>
 	<div id="container">
-		<div id="app_bar">logo
+		<div id="app-bar"><h1 id="logo">plan B</h1>
 			<% if current_user %>	
-				<%= link_to "Sign Out", signout_path %>
+				<%= link_to "sign out", signout_path, :id => 'signout' %>
 				<% end %>
 		</div>
 		<% flash.each do |name, msg| %>
@@ -30,7 +30,7 @@
 		<div id="content">
 		
 			<% if !current_user %>
-			<%= link_to(image_tag("/images/fb-connect-large.png"), "/auth/facebook") %>
+			<%= link_to(image_tag("/images/fb-connect-large.png"), "/auth/facebook", :id => 'fb-button') %>
 			<% else %>
 			<%= yield %>
 			<% end %>

@@ -1,8 +1,23 @@
+/*  RESET
+    http://meyerweb.com/eric/tools/css/reset/
+    1.0 | 20080212
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+/*  End reset */
+
+
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 /*	background-color: #171717;
 	color: #9F9E9C;*/
-	margin:0;
 /*	font-size:0.8em;*/
 	}
 .event_list_header {
@@ -65,58 +80,52 @@ img.avatar {
     width: 32px;
 }
 
+
 /******************
- Login form styles
+ Login page styles
  ******************/
 
-h1#logo-plan-b { text-align: center;}
-
-/* Form base */
-
-#login-form {
-  margin-top: 25px;
+#app-bar {
+  width: 100%;
+  background: #000;
 }
 
-form#login input[type="email"], input[type="password"] {
+h1#logo {
+  font-size: 18px;
+  font-variant: small-caps;
+  padding: 15px;
+  color: #fff;
+}
+
+#fb-button img {
   display: block;
-  width: 280px;
-  margin: 0 auto;
-  padding: 10px; 
-/*  font-size: 16px;*/
-  border: 1px solid #ccc;
-  background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
-  -webkit-border-radius: 8px 8px 0px 0px;
-  border-radius: 8px 8px 0px 0px;
+  margin: 125px auto 0;
 }
 
-form#login input[type="password"] {
-  margin-top: 0;
-  border-top: 0;
-  -webkit-border-radius: 0 0 8px 8px;
-  border-radius: 0 0 8px 8px;
+/* logout thingy style */
+
+a#signout {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  color: #fff;
+  font-variant: small-caps;
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
 }
 
-form#login .button {
-  display: block;
-  width: 302px;           /* if border -2px */
-  margin: 15px auto;
-  padding: 10px;
-/*  background-color: #ff9e00;*/
-  border: none;
-/*  font-size: 16px;*/
-/*  color: #fff;*/
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-appearance: none;
-}
+ /* Media Query */
 
-/* Media Query */
-
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  form#login input[type="email"], input[type="password"] {
-    width: 440px;
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  #fb-button img {
+    margin-top: 60px;
   }
-  form#login .button {
-    width: 462px;
-  }
-}
+
+
+
+
+
+
+
+
