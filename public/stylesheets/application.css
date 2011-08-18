@@ -13,10 +13,10 @@ table { border-collapse:collapse;border-spacing:0; }
 
 /*  End reset */
 
+body, html { background-color: #F0F0F0; }
 
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	background-color: #F0F0F0;
 /*	color: #9F9E9C;*/*/
 /*	font-size:0.8em;*/
 	}
