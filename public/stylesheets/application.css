@@ -131,6 +131,8 @@ a#signout {
 div#info h2 {
 	margin: 0 5px;
 	display: inline;
+	float:left;
+	padding: 5px 0;
 }
 
 
