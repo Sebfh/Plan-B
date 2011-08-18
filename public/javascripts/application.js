@@ -6,6 +6,9 @@ jQuery(function($) {
 	TestJquery = function(message) {
 		alert(message);
 	}
-	//TestJquery('testing the jquery');
+	
+	$('#flash_notice').click(function(){
+		$(this).slideUp();
+	});
 })
 
