@@ -10,5 +10,11 @@ jQuery(function($) {
 	$('#flash_notice').click(function(){
 		$(this).slideUp();
 	});
+	
+	//alle externe links afvangen en window location zetten
+	$('a').click(function(){
+		window.location = $(this).attr('href');
+		return false;
+	});
 })
 
