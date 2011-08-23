@@ -48,7 +48,7 @@ body {
 }
 .event_item div.description {
 	float: left;
-    padding-left: 30px;
+  padding-left: 30px;
 }
 .event_item div.description span.view a {
 /*	color: #4083A9;*/
@@ -108,17 +108,18 @@ div#content {
   margin: 125px auto 0;
 }
 
-/* logout thingy style */
+/* new plan thingy style */
 
-a#signout {
-  position: absolute;
-  top: 18px;
-  right: 15px;
+a#new-plan-button {
+  float: right;
   color: #fff;
-  font-variant: small-caps;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px dotted #fff;
+  border-radius: 4px;
+  background: #4D5259;
+  padding: 5px 8px 8px;
+  margin: 11px 10px 0;
+  border: 1px solid #3c4248;
 }
 
 /* User image */
@@ -127,12 +128,17 @@ a#signout {
   padding: 5px 5px 15px;
   background: #fff;
   float: left;
+  margin: 0 5px 0 0;
 }
 div#info h2 {
-	margin: 0 5px;
-	display: inline;
-	float:left;
-	padding: 5px 0;
+	padding: 5px 0 0;
+}
+
+a#signout {
+  font-size: 10px;
+  color: gray;
+  text-decoration: none;
+  border-bottom: 1px dotted gray;
 }
 
 .clearfix:after {
