@@ -1,51 +1,8 @@
 body, html {
-  background-color: #f0f0f1; }
+  background: #f0f0f0; }
 
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
-
-.event_list_header {
-  font-weight: bold;
-  padding: 10px 12px 3px; }
-
-.event_item {
-  padding: 10px;
-  border-top: 1px solid #9F9E9C; }
-.event_item div.date {
-  width: 50px;
-  text-align: center;
-  float: left;
-  margin: 0 5px; }
-.event_item div.smiles {
-  width: 75px;
-  float: right; }
-.event_item div.description {
-  float: left;
-  padding-left: 30px; }
-.event_item div.description span.view a {
-  text-decoration: none; }
-
-div.menu {
-  padding: 10px; }
-div.menu span {
-  padding: 5px;
-  float: left;
-  margin-right: 20px; }
-div.menu span.active {
-  -moz-border-radius: 3px;
-  -webkit-borer-radius: 3px;
-  border-radius: 3px; }
-
-span.column_header {
-  vertical-align: sub; }
-
-img.avatar {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 1px solid #E5E5E5;
-  float: left;
-  margin: 1px 10px 0 0;
-  padding: 4px;
-  width: 32px; }
 
 div#flash_notice {
   color: #c8c100;
@@ -55,43 +12,50 @@ div#flash_notice {
   border-bottom: 2px solid #fffb95; }
 
 img#planblogo {
-  margin: 0 10px; }
+  margin: 0 0 0 10px; }
 
 div#content {
   padding: 10px; }
 
 /******************
- Login page styles
+ Page styles
  ******************/
 #app-bar {
   width: 100%;
+  height: 50px;
   background: #434950; }
 
 #fb-button img {
   display: block;
   margin: 125px auto 0; }
 
-/* logout thingy style */
-a#signout {
-  position: absolute;
-  top: 18px;
-  right: 15px;
+/* new plan thingy style */
+a#new-plan-button {
+  float: right;
   color: #fff;
-  font-variant: small-caps;
-  font-size: 12px;
-  text-decoration: none; }
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #4D5259;
+  padding: 5px 8px 8px;
+  margin: 11px 10px 0 0;
+  border: 1px solid #3c4248; }
 
 /* User image */
 .user-img {
   padding: 5px 5px 15px;
   background: #fff;
-  float: left; }
+  float: left;
+  margin: 0 5px 0 0; }
 
 div#info h2 {
-  margin: 0 5px;
-  display: inline;
-  float: left;
-  padding: 5px 0; }
+  padding: 5px 0 0; }
+
+a#signout {
+  font-size: 10px;
+  color: gray;
+  text-decoration: none;
+  border-bottom: 1px dotted gray; }
 
 .clearfix:after {
   visibility: hidden;
