@@ -19,8 +19,7 @@
 			<%= image_tag("planb-logo-pink.png", :id => 'planblogo') %>
 			<% if current_user %>	
 			  <a href="#" id="new-plan-button">+ new plan</a>
-        <!-- <%= link_to "sign out", signout_path, :id => 'signout' %> -->
-				<% end %>
+			<% end %>
 		</div>
 		<% flash.each do |name, msg| %>
 			<%= content_tag :div, msg, :id => "flash_#{name}" %>
