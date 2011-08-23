@@ -2,6 +2,7 @@
   <% if current_user %>
   <%= image_tag(current_user.image_uri, :class => 'user-img') %>
   <h2><%= current_user.name %></h2>
+  <%= link_to "sign out", signout_path, :id => 'signout' %>
   <% end %>
 </div>
 <div id="plans">
