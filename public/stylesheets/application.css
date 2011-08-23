@@ -100,6 +100,7 @@ div#content {
 
 #app-bar {
   width: 100%;
+  height: 50px;
   background: #434950;
 }
 
@@ -118,7 +119,7 @@ a#new-plan-button {
   border-radius: 4px;
   background: #4D5259;
   padding: 5px 8px 8px;
-  margin: 11px 10px 0;
+  margin: 11px 10px 0 0;
   border: 1px solid #3c4248;
 }
 
