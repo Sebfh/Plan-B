@@ -32,9 +32,9 @@ div.menu span {
   float: left;
   margin-right: 20px; }
 div.menu span.active {
-  border-radius: 3px;
   -moz-border-radius: 3px;
-  -webkit-borer-radius: 3px; }
+  -webkit-borer-radius: 3px;
+  border-radius: 3px; }
 
 span.column_header {
   vertical-align: sub; }

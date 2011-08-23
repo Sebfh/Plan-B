@@ -3,9 +3,9 @@ $bar-color: #434950;
 $flash-color: #FFFDC8;
 
 @mixin rounded-corners($radius) {
-	border-radius: $radius;
 	-moz-border-radius:$radius;
 	-webkit-borer-radius:$radius;
+	border-radius: $radius;
 }
 
 body, html { background-color: $main-color; }
