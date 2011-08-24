@@ -18,7 +18,12 @@
 		<div id="app-bar">
 			<%= image_tag("planb-logo-pink.png", :id => 'planblogo') %>
 			<% if current_user %>	
+<<<<<<< HEAD
 			  <%= link_to '+ new plan', new_plan_path() , :id => 'new-plan-button' %>
+=======
+			  <%= link_to "+ new plan", new_plan_path, :id => "new-plan-button" %>
+			  <!-- <a href="#" id="new-plan-button">+ new plan</a> -->
+>>>>>>> 89637c6214c654c7b3b378cf262a5c2e67ce8832
 			<% end %>
 		</div>
 		<% flash.each do |name, msg| %>
