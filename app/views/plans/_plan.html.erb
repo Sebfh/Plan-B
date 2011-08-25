@@ -1,5 +1,6 @@
 <div class="plan-item <%= cycle('odd', 'even') %> clearfix">
-    <time datetime="<%= plan.date %>"><img src="http://placehold.it/40x40" ></time><!-- replace with dynamic generated calendar img -->
+    <time datetime="<%= plan.date %>"><img src="http://placehold.it/40x40" ></time>
+<!-- replace with dynamic generated calendar img -->
     <h3><%= plan.title %></h3>
-    <p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (more)") %></p>
+    <p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
 </div>
