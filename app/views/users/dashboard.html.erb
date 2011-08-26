@@ -1,3 +1,8 @@
+<% content_for :nav_action do %>
+  <% if current_user %>	
+	  <%= link_to "new", new_plan_path, :id => "new-plan-button" %>
+	<% end %>
+<%end%>
 <div id="info" class="clearfix">
   <% if current_user %>
   <%= image_tag(current_user.image_uri, :class => 'user-img') %>

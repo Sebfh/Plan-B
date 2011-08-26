@@ -15,5 +15,6 @@
   <h3><%= plan.title %></h3>
   <time><%= plan.starts_at.strftime( "%H:%M" ) %></time>
   <p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
+  <%= link_to 'show', plan_path(plan) %>
   </div>
 </div>

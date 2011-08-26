@@ -11,9 +11,7 @@
 	<div id="container">
 		<div id="app-bar">
 			<%= link_to image_tag("planb-logo-pink.png", :id => 'planblogo'), root_path %>
-			<% if current_user %>	
-			  <%= link_to "+ new plan", new_plan_path, :id => "new-plan-button" %>
-			<% end %>
+      <%= yield :nav_action %>
 		</div>
 		<% flash.each do |name, msg| %>
 			<%= content_tag :div, msg, :id => "flash_#{name}" %>

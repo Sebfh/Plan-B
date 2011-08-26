@@ -24,5 +24,24 @@ class PlansController < ApplicationController
     end
   end
   
+  def show
+    @plan = Plan.find(params[:id])
+  end
+  
+  def edit
+    @plan = Plan.find(params[:id])
+  end
+  
+  def update
+    @plan = Plan.find(params[:id])
+    respond_to do |format|
+      if @plan.update_attributes(params[:plan])
+        format.html { redirect_to plan_path(@plan), :notice => 'Plan was successfully updated.' }
+      else
+        format.html { render :action => "edit" }
+      end
+    end
+  end
+  
   
 end
