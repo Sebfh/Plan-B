@@ -1,3 +1,7 @@
-
+<% content_for :nav_action_left do %>
+  <% if current_user %>	
+	  <%= link_to "back", root_path(), :class => 'nav-button' %>
+	<% end %>
+<%end%>
 <%= render 'form' %>
 
