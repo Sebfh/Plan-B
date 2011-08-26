@@ -19,9 +19,6 @@ div#flash_notice {
 	border-bottom: 2px solid darken($flash-color, 10%);
 }
 
-img#planblogo {
-}
-
 div#content {
 	padding:10px;
 }
@@ -50,7 +47,7 @@ div#content {
   margin: 0 auto;
 }
 
-#action-right{
+#action-right {
   float: right;
   padding: 15px 10px;
 }
@@ -60,12 +57,20 @@ div#content {
   padding: 15px 10px;
 }
 a.nav-button {
-	background-color: lighten($bar-color, 10%);
-	border-radius: 3px 3px 3px 3px;
-	margin-top: 43px;
-	padding: 5px 7px;
+	background-color: $bar-color;
+	background: -moz-linear-gradient(top,  $bar-color,  darken($bar-color, 5%));
+  background: -webkit-gradient(linear, left top, left bottom, 
+                                     from($bar-color), to(darken($bar-color, 5%)));
+	@include rounded-corners(3px);
 	text-decoration: none;
 	color: #fff;
+	font-size: 14px;
+  font-weight: bold;
+	padding: 4px 8px 4px;
+  border: 1px solid darken($bar-color, 12%);
+  text-shadow: 0 1px 0 #222;
+  -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.3), inset 0 1px 1px lighten($bar-color, 30%);
+  -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.3), inset 0 1px 2px lighten($bar-color, 30%);  
 }
 
 /* User image */
@@ -75,6 +80,8 @@ a.nav-button {
   background: #fff;
   float: left;
   margin: 0 5px 0 0;
+  -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
 }
 
 div#info h2 {
