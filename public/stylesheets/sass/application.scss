@@ -20,7 +20,6 @@ div#flash_notice {
 }
 
 img#planblogo {
-	margin: 0 0 0 10px;
 }
 
 div#content {
@@ -46,20 +45,33 @@ div#content {
   margin: 125px auto 0;
 }
 
-/* new plan thingy style */
-
-a#new-plan-button {
-  float: right;
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  @include rounded-corners(4px);
-  background: #4D5259;
-  padding: 5px 8px;
-  margin: 11px 10px 0 0;
-  border: 1px solid #3c4248;
-  text-shadow: 0 1px 0 #333;
+#logo {
+  width: 100px;
+  margin: 0 auto;
 }
+
+#action-right{
+  float: right;
+}
+
+#action-left {
+  float: left;
+}
+
+///* new plan thingy style */
+//
+//a#new-plan-button {
+//  float: right;
+//  color: #fff;
+//  font-size: 14px;
+//  text-decoration: none;
+//  @include rounded-corners(4px);
+//  background: #4D5259;
+//  padding: 5px 8px;
+//  margin: 11px 10px 0 0;
+//  border: 1px solid #3c4248;
+//  text-shadow: 0 1px 0 #333;
+//}
 
 /* User image */
 

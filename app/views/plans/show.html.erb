@@ -1,6 +1,11 @@
-<% content_for :nav_action do %>
+<% content_for :nav_action_left do %>
   <% if current_user %>	
-	  <%= link_to "edit", edit_plan_path(@plan), :id => "new-plan-button" %>
+	  <%= link_to "back", root_path %>
+	<% end %>
+<%end%>
+<% content_for :nav_action_right do %>
+  <% if current_user %>	
+	  <%= link_to "edit", edit_plan_path(@plan) %>
 	<% end %>
 <%end%>
 <h2><%= @plan.title %></h2>

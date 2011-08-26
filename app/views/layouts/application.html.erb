@@ -10,8 +10,16 @@
 <body>
 	<div id="container">
 		<div id="app-bar">
-			<%= link_to image_tag("planb-logo-pink.png", :id => 'planblogo'), root_path %>
-      <%= yield :nav_action %>
+		  <div id="action-left">
+		    <%= yield :nav_action_left %>
+		  </div>
+		  <div id="action-right">
+		    <%= yield :nav_action_right %>
+		  </div>
+		  <div id="logo">
+		    <%= link_to image_tag("planb-logo-pink.png", :id => 'planblogo'), root_path %>
+		  </div>
+
 		</div>
 		<% flash.each do |name, msg| %>
 			<%= content_tag :div, msg, :id => "flash_#{name}" %>
