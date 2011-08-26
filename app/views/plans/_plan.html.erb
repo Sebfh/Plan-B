@@ -1,6 +1,16 @@
 <div class="plan-item <%= cycle('odd', 'even') %> clearfix">
-    <time datetime="<%= plan.date %>"><img src="http://placehold.it/40x40" ></time>
+  <div id="calendar">
+    <time datetime="<%= plan.starts_at.to_s %>">
+      <div id="month">
+        
+        <%= plan.starts_at.strftime( "%b" ) %>
+      </div>
+      <div id="day">
+        <%= plan.starts_at.day %>
+      </div>
+    </time>
+  </div>
 <!-- replace with dynamic generated calendar img -->
-    <h3><%= plan.title %></h3>
-    <p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
+  <h3><%= plan.title %></h3>
+  <p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
 </div>

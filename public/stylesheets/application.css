@@ -23,7 +23,10 @@ div#content {
 #app-bar {
   width: 100%;
   height: 50px;
-  background: #434950; }
+  background: #434950;
+  background: -moz-linear-gradient(top, #434950, #373c42);
+  background: -webkit-gradient(linear, left top, left bottom, from(#434950), to(#373c42));
+  border-bottom: 1px solid #000; }
 
 #fb-button img {
   display: block;
@@ -35,11 +38,14 @@ a#new-plan-button {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   background: #4D5259;
   padding: 5px 8px;
   margin: 11px 10px 0 0;
-  border: 1px solid #3c4248; }
+  border: 1px solid #3c4248;
+  text-shadow: 0 1px 0 #333; }
 
 /* User image */
 .user-img {
@@ -50,7 +56,8 @@ a#new-plan-button {
 
 div#info h2 {
   padding: 5px 0 0;
-  font-size: 18px; }
+  font-size: 18px;
+  text-shadow: 0 1px 0 #fff; }
 
 a#signout {
   font-size: 10px;
@@ -64,10 +71,13 @@ a#signout {
 
 #plans h2 {
   padding: 5px 0;
-  border-bottom: 1px solid #bdbdbd; }
+  text-shadow: 0 1px 0 #fff; }
 
 .plan-item {
-  padding: 5px 0; }
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  margin-bottom: -1px; }
 .plan-item time img {
   float: left;
   margin-right: 5px; }
@@ -76,11 +86,28 @@ a#signout {
 .plan-item p {
   font-size: 12px; }
 
-.even {
-  background: #f8f8f8; }
+/* Calendar styling */
+#calendar {
+  text-align: center;
+  width: 40px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px; }
 
-.odd {
-  background: #ebebeb; }
+#month {
+  background: -moz-linear-gradient(top, #666f7a, #434950);
+  background: -webkit-gradient(linear, left top, left bottom, from(#666f7a), to(#434950));
+  border-radius: 6px 6px 0 0;
+  padding: 1px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff; }
+
+#day {
+  background: white;
+  border-radius: 0 0 6px 6px;
+  padding: 1px 0 0;
+  font-size: 20px; }
 
 .clearfix:after {
   visibility: hidden;
