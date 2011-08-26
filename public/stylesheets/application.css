@@ -74,6 +74,10 @@ a#signout {
   font-size: 14px; }
 .plan-item p {
   font-size: 12px; }
+.plan-item div.linkr {
+  float: right;
+  height: 55px;
+  /* dit is niet de beste manier geloof ik */ }
 
 /* Calendar styling */
 .calendar {

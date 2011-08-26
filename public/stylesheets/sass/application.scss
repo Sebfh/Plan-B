@@ -58,21 +58,6 @@ div#content {
   float: left;
 }
 
-///* new plan thingy style */
-//
-//a#new-plan-button {
-//  float: right;
-//  color: #fff;
-//  font-size: 14px;
-//  text-decoration: none;
-//  @include rounded-corners(4px);
-//  background: #4D5259;
-//  padding: 5px 8px;
-//  margin: 11px 10px 0 0;
-//  border: 1px solid #3c4248;
-//  text-shadow: 0 1px 0 #333;
-//}
-
 /* User image */
 
 .user-img {
@@ -102,21 +87,21 @@ a#signout {
   text-shadow: 0 1px 0 #fff;
 }
 .plan-item {
-  padding: 5px;
-  background: #fff;
-  border: 1px solid darken($main-color, 3%);
-  margin-bottom: -1px;
-  h3 {
-    font-size: 14px;
-  }
-  p {
-    font-size: 12px;
-  }
+  	padding: 5px;
+  	background: #fff;
+  	border: 1px solid darken($main-color, 3%);
+  	margin-bottom: -1px;
+  	h3 {
+    	font-size: 14px;
+  	}
+  	p 	{
+    	font-size: 12px;
+  	}
+	div.linkr { 
+		float:right;
+		height: 55px; /* dit is niet de beste manier geloof ik */
+		}
 }
-//.even {
-//  background: lighten($main-color, 3%);
-//}
-//.odd {background: darken($main-color, 2%);}
 
  /* Calendar styling */
 .calendar {

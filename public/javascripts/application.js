@@ -3,12 +3,16 @@
 
 // Append the function to the "document ready" chain
 jQuery(function($) {
-	TestJquery = function(message) {
-		alert(message);
-	}
 	
 	$('#flash_notice').click(function(){
 		$(this).slideUp();
+	});
+	
+	$('div.plan-item').click(function(){
+		
+		var linkr = $(this).children('div.linkr');
+		var edit = $(linkr).children('a').first();
+		window.location = $(edit).attr('href');
 	});
 	
 	//alle externe links afvangen en window location zetten
@@ -16,5 +20,6 @@ jQuery(function($) {
 		window.location = $(this).attr('href');
 		return false;
 	});
+	
 })
 

@@ -1,20 +1,21 @@
 <div class="plan-item <%= cycle('odd', 'even') %> clearfix">
-  <div class="calendar">
-    <time datetime="<%= plan.starts_at.to_s %>">
-      <div class="month">
-        
-        <%= plan.starts_at.strftime( "%b" ) %>
-      </div>
-      <div class="day">
-        <%= plan.starts_at.day %>
-      </div>
-    </time>
-  </div>
-<!-- replace with dynamic generated calendar img -->
-  <div class="desc">
-  <h3><%= plan.title %></h3>
-  <time><%= plan.starts_at.strftime( "%H:%M" ) %></time>
-  <p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
-  <%= link_to 'show', plan_path(plan) %>
-  </div>
+  	<div class="calendar">
+    	<time datetime="<%= plan.starts_at.to_s %>">
+      		<div class="month">
+				<%= plan.starts_at.strftime( "%b" ) %>
+      		</div>
+      		<div class="day">
+        		<%= plan.starts_at.day %>
+      		</div>
+    	</time>
+  	</div>
+	<div class="linkr">
+		<%= link_to '>', plan_path(plan) %> <!-- vervangen door een arrow img -->
+	</div>
+  	<div class="desc">
+  		<h3><%= plan.title %></h3>
+  		<time><%= plan.starts_at.strftime( "%H:%M" ) %></time>
+  		<p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
+  	</div>
+	
 </div>
