@@ -1,6 +1,6 @@
 <% content_for :nav_action_right do %>
   <% if current_user %>	
-	  <%= link_to "new", new_plan_path %>
+	  <%= link_to "new", new_plan_path, :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <div id="info" class="clearfix">
