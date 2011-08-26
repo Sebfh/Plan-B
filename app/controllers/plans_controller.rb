@@ -43,5 +43,4 @@ class PlansController < ApplicationController
     end
   end
   
-  
 end
