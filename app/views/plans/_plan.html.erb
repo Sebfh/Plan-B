@@ -14,7 +14,13 @@
 	</div>
   	<div class="desc">
   		<h3><%= plan.title %></h3>
-  		<time><%= plan.starts_at.strftime( "%H:%M" ) %></time>
+  		<span class="when">
+			<% if Time.now > plan.starts_at %>
+			<%= distance_of_time_in_words(Time.now, plan.starts_at) %> ago
+			<% else %>
+			in <%= distance_of_time_in_words(Time.now, plan.starts_at) %>
+			<% end %>
+  		</span>
   		<p><%= plan.description.truncate(50,:separator => ' ',:omission => "... (meer)") %></p>
   	</div>
 	

@@ -83,8 +83,9 @@ a#signout {
 /* Plans part on dashboard */
 #plans { margin-top: 10px;}
 #plans h2 {
+  color: #C2C2C2;
   padding: 5px 0;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 #FFFCFC;
 }
 .plan-item {
   	padding: 5px;
@@ -95,12 +96,17 @@ a#signout {
     	font-size: 14px;
   	}
   	p 	{
-    	font-size: 12px;
+    	font-size: 14px;
   	}
 	div.linkr { 
 		float:right;
 		height: 55px; /* dit is niet de beste manier geloof ik */
 		}
+	span.when {
+		font-size: 12px;
+		color: darken($main-color, 50%);
+		line-height: 1em;
+	}
 }
 
  /* Calendar styling */
