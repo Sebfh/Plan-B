@@ -21,7 +21,7 @@
 			in <%= distance_of_time_in_words(Time.now, plan.starts_at) %>
 			<% end %>
   		</span>
-  		<p><%= plan.description.truncate(100,:separator => ' ',:omission => "...") %></p>
+  		<p><%= plan.description.truncate(95,:separator => ' ',:omission => "...") %></p>
   	</div>
 	
 </div>
