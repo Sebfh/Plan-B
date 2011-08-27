@@ -8,6 +8,18 @@
 	  <%= link_to "edit", edit_plan_path(@plan), :class => 'nav-button' %>
 	<% end %>
 <%end%>
+
 <h2><%= @plan.title %></h2>
-<h3><%= @plan.user.name %></h3>
+<span class="when">
+	<% if Time.now > @plan.starts_at %>
+	<%= distance_of_time_in_words(Time.now, @plan.starts_at) %> ago, by <%= @plan.user.name %>
+	<% else %>
+	in <%= distance_of_time_in_words(Time.now, @plan.starts_at) %>, by <%= @plan.user.name %>
+	<% end %>
+</span>
+
 <p><%= @plan.description %></p>
+<% if @plan.location %>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@plan.location.latitude}%2C#{@plan.location.longitude}" %>
+<%= render @plan.location %>
+<% end %>

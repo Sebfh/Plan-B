@@ -5,6 +5,7 @@ gem 'sqlite3'
 gem 'omniauth'
 gem "sass"
 gem 'haml'
+gem 'geocoder'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
