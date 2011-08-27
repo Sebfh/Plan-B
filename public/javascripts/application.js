@@ -4,9 +4,7 @@
 // Append the function to the "document ready" chain
 jQuery(function($) {
 	
-	$('#flash_notice').click(function(){
-		$(this).slideUp();
-	});
+	$('#flash_notice').delay(3000).slideUp(500);
 	
 	$('div.plan-item').click(function(){
 		
