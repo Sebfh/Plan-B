@@ -117,7 +117,12 @@ a#signout {
   	}
 	div.linkr { 
 		float:right;
-		height: 55px; /* dit is niet de beste manier geloof ik */
+		margin: 10px 10px 0;
+		border: 6px solid darken($main-color, 25%);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+//    height: 55px; /* dit is niet de beste manier geloof ik */
 		}
 	span.when {
 		font-size: 12px;

@@ -98,8 +98,11 @@ a#signout {
   font-size: 14px; }
 .plan-item div.linkr {
   float: right;
-  height: 55px;
-  /* dit is niet de beste manier geloof ik */ }
+  margin: 10px 10px 0;
+  border: 6px solid #b0b0b0;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent; }
 .plan-item span.when {
   font-size: 12px;
   color: #707070;
