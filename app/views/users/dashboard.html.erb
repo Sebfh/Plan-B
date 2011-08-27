@@ -13,5 +13,13 @@
 
 <div id="plans">
   <h2>Your plans</h2>
-	<%= render @plans %>
+  <% if Plan.count == 0 %>  <!-- div link needs to go to "new plan"? -->
+    <div class="plan-item clearfix">
+      <p>Looks like you've got nothing planned yet.
+        Hit the new button and start planning!</p>
+      <p><a href="#">Need help?</a></p>
+    </div>
+  <% else %>
+	  <%= render @plans %>
+	<% end %>
 </div>
