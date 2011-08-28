@@ -124,14 +124,15 @@ a#signout {
     border-bottom-color: transparent;
 //    height: 55px; /* dit is niet de beste manier geloof ik */
 		}
-	span.when, span.address {
-		font-size: 12px;
-		color: darken($main-color, 50%);
-		line-height: 1em;
-	}
+
 	span.address img {
 		vertical-align: text-top;
 	}
+}
+span.when, span.address {
+	font-size: 12px;
+	color: darken($main-color, 50%);
+	line-height: 1em;
 }
 
  /* Calendar styling */
