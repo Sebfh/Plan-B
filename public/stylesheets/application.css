@@ -41,7 +41,7 @@ div#content {
   float: left;
   padding: 15px 10px; }
 
-a.nav-button {
+a.nav-button, a.light-button {
   background-color: #434950;
   background: -moz-linear-gradient(top, #434950, #373c42);
   background: -webkit-gradient(linear, left top, left bottom, from(#434950), to(#373c42));
@@ -81,11 +81,12 @@ a#signout {
 /* Plans part on dashboard */
 #plans {
   margin-top: 10px; }
-
 #plans h2 {
   color: #C2C2C2;
   padding: 5px 0;
   text-shadow: 0 1px 0 #FFFCFC; }
+#plans #filters {
+  float: right; }
 
 .plan-item {
   padding: 5px;

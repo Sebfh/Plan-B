@@ -17,16 +17,17 @@
 </div>
 
 <div id="plans">
-  <h2>Your plans</h2>
-  <% if Plan.count == 0 %>
-    <div class="plan-item clearfix">
-      <div class="linkr">
-    		<%= link_to "", new_plan_path %> <!-- vervangen door een arrow img -->
+  	<div id="filters"><%=link_to 'Yours', '#', :class => 'light-button' %> <%=link_to 'All', '#', :class => 'light-button' %></div>
+	<h2>Plans</h2>
+  	<% if Plan.count == 0 %>
+    	<div class="plan-item clearfix">
+      		<div class="linkr">
+    			<%= link_to "", new_plan_path %> <!-- vervangen door een arrow img -->
+    		</div>
+      		<p>You've got no plans. Tap here to start planning!</p>
+      		<p><a href="#">Need help?</a></p>
     	</div>
-      <p>You've got no plans. Tap here to start planning!</p>
-      <p><a href="#">Need help?</a></p>
-    </div>
-  <% else %>
-	  <%= render @plans %>
+  	<% else %>
+		<%= render @plans %>
 	<% end %>
 </div>

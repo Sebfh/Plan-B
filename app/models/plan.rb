@@ -5,6 +5,9 @@ class Plan < ActiveRecord::Base
   validates_presence_of :title, :description, :starts_at, :address, :user_id
   before_save :cleanup
   
+  scope :upcoming, lambda { 
+      where("plans.starts_at IS NOT NULL AND plans.starts_at >= ?", Time.zone.now)
+    }
   named_scope :descending, :order => "starts_at DESC"
   named_scope :ascending, :order => "starts_at ASC"
   

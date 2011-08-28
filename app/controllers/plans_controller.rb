@@ -1,7 +1,11 @@
 class PlansController < ApplicationController
 
   def index
-    @json = Plan.all.to_gmaps4rails
+    @json = Plan.upcoming.to_gmaps4rails
+    
+    respond_to do |format|
+      format.html
+    end
   end
   
   def new

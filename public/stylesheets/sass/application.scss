@@ -56,7 +56,7 @@ div#content {
   float: left;
   padding: 15px 10px;
 }
-a.nav-button {
+a.nav-button, a.light-button {
 	background-color: $bar-color;
 	background: -moz-linear-gradient(top,  $bar-color,  darken($bar-color, 5%));
   background: -webkit-gradient(linear, left top, left bottom, 
@@ -98,12 +98,18 @@ a#signout {
 }
 
 /* Plans part on dashboard */
-#plans { margin-top: 10px;}
-#plans h2 {
-  color: #C2C2C2;
-  padding: 5px 0;
-  text-shadow: 0 1px 0 #FFFCFC;
-}
+#plans { 
+	margin-top: 10px;
+	h2 {
+		color: #C2C2C2;
+		padding: 5px 0;
+		text-shadow: 0 1px 0 #FFFCFC;
+		}
+	#filters {
+		float:right;
+	}
+	}
+	
 .plan-item {
   	padding: 5px;
   	background: #fff;
