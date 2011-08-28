@@ -67,6 +67,15 @@ a.nav-button, a.light-button {
   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3); }
 
+.attendee-img {
+  padding: 3px 3px;
+  background: #fff;
+  float: left;
+  margin: 0 5px 0 0;
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  width: 32px; }
+
 div#info h2 {
   padding: 5px 0 0;
   font-size: 18px;
@@ -89,6 +98,7 @@ a#signout {
   float: right; }
 
 .plan-item, .attendee-item {
+  clear: both;
   padding: 5px;
   background: #fff;
   border: 1px solid #e8e8e8;
@@ -106,6 +116,9 @@ a#signout {
   border-bottom-color: transparent; }
 .plan-item span.address img, .attendee-item span.address img {
   vertical-align: text-top; }
+
+.attendee-item {
+  min-height: 38px; }
 
 span.emotion {
   font-size: 12px;
