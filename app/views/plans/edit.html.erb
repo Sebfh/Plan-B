@@ -1,11 +1,11 @@
 <% content_for :nav_action_left do %>
   <% if current_user %>	
-	  <%= link_to "Back", plan_path(@plan), :class => 'nav-button' %>
+	  <%= link_to "back", plan_path(@plan), :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <% content_for :nav_action_right do %>
   <% if current_user %>	
-	  <%= link_to "Delete", plan_path(@plan), :class => 'nav-button' %>
+	  <%= link_to "delete", plan_path(@plan), :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <%= render 'form' %>

@@ -1,11 +1,11 @@
 <% content_for :nav_action_right do %>
   <% if current_user %>	
-	  <%= link_to "New", new_plan_path, :class => 'nav-button' %>
+	  <%= link_to "new", new_plan_path, :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <% content_for :nav_action_left do %>
   <% if current_user %>	
-	  <%= link_to "Map", map_path, :class => 'nav-button' %>
+	  <%= link_to "map", map_path, :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <div id="info" class="clearfix">
@@ -17,7 +17,7 @@
 </div>
 
 <div id="plans">
-  	<div id="filters"><%=link_to 'Yours', '#', :class => 'light-button' %> <%=link_to 'All', '#', :class => 'light-button' %></div>
+  	<div id="filters"><%=link_to 'yours', '#', :class => 'light-button' %> <%=link_to 'all', '#', :class => 'light-button' %></div>
 	<h2>Plans</h2>
   	<% if Plan.count == 0 %>
     	<div class="plan-item clearfix">
