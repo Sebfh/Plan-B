@@ -1,9 +1,16 @@
 class Location < ActiveRecord::Base
-  extend Geocoder::Model::ActiveRecord # zoals uitgelegd op: https://github.com/alexreisner/geocoder/issues/105
-  validates_presence_of :address
   belongs_to :plan
   
-  geocoded_by :address
-  after_validation :geocode, :if => :address_changed?
+  acts_as_gmappable
+
+  def gmaps4rails_address
+    address
+  end
+   
+  def gmaps4rails_infowindow
+        if !self.plan.nil?
+          "<h1>#{self.plan.title}</h1><p><a href=""/plans/#{self.plan.id}"">view details</a></p>"
+        end
+  end
 end
 

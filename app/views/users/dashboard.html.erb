@@ -1,18 +1,23 @@
 <% content_for :nav_action_right do %>
   <% if current_user %>	
-	  <%= link_to "new", new_plan_path, :class => 'nav-button' %>
+	  <%= link_to "New", new_plan_path, :class => 'nav-button' %>
+	<% end %>
+<%end%>
+<% content_for :nav_action_left do %>
+  <% if current_user %>	
+	  <%= link_to "Map", locations_path, :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <div id="info" class="clearfix">
   <% if current_user %>
   <%= image_tag(current_user.image_uri, :class => 'user-img') %>
   <h2><%= current_user.name %></h2>
-  <%= link_to "sign out", signout_path, :id => 'signout' %>
+  <%= link_to "Sign out", signout_path, :id => 'signout' %>
   <% end %>
 </div>
 
 <div id="plans">
-  <h2>Your plans</h2>
+  <h2>Your plans.</h2>
   <% if Plan.count == 0 %>
     <div class="plan-item clearfix">
       <div class="linkr">

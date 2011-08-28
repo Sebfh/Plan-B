@@ -1,11 +1,11 @@
 <% content_for :nav_action_left do %>
   <% if current_user %>	
-	  <%= link_to "back", root_path, :class => 'nav-button' %>
+	  <%= link_to "Map", locations_path, :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <% content_for :nav_action_right do %>
   <% if current_user %>	
-	  <%= link_to "edit", edit_plan_path(@plan), :class => 'nav-button' %>
+	  <%= link_to "Edit", edit_plan_path(@plan), :class => 'nav-button' %>
 	<% end %>
 <%end%>
 
@@ -18,8 +18,7 @@
 	<% end %>
 </span>
 
-<p><%= @plan.description %></p>
-<% if @plan.location %>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@plan.location.latitude}%2C#{@plan.location.longitude}" %>
-<%= render @plan.location %>
+<p><% if @plan.location %>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=150x150&sensor=false&zoom=16&markers=#{@plan.location.latitude}%2C#{@plan.location.longitude}", :id => "location-small" %>
 <% end %>
+<%= @plan.description %></p>

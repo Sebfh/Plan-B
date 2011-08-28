@@ -1,0 +1,6 @@
+<% content_for :nav_action_left do %>
+  <% if current_user %>	
+	  <%= link_to "Profile", root_path, :class => 'nav-button' %>
+	<% end %>
+<%end%>
+<%= gmaps("map_options" => { "mapTypeControl" => false, "detect_location" => true, "center_on_user" => true, "zoom" => 11, "auto_zoom" => false },"markers" => { "data" => @json }) %>
