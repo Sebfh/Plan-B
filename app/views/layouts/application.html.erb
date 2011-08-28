@@ -3,7 +3,7 @@
 <head>
   <title>PlanB</title>
   <%= stylesheet_link_tag 'reset.css', 'application.css' %>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :defaults, 'gmaps4rails.base.js', 'gmaps4rails.googlemaps.js' %>
   <%= csrf_meta_tag %>
   <%= render "layouts/meta"%>
   <%= yield :head %>
