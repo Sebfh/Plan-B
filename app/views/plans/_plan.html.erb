@@ -22,6 +22,9 @@
 			<% end %>
   		</span>
   		<p><%= plan.description.truncate(95,:separator => ' ',:omission => "...") %></p>
+		<span class="address">
+			<%= image_tag('map.png') %> <%= plan.address %>
+		</span>
   	</div>
 	
 </div>

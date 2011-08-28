@@ -1,11 +1,12 @@
 class PlansController < ApplicationController
 
-  # GET /plans/new
-  # GET /plans/new.xml
+  def index
+    @json = Plan.all.to_gmaps4rails
+  end
+  
   def new
     @plan = Plan.new
     @plan.user = current_user
-    @location = Location.new
     
     respond_to do |format|
       format.html # new.html.erb
@@ -15,11 +16,6 @@ class PlansController < ApplicationController
   def create
     @plan = Plan.new(params[:plan])
     @plan.user = current_user
-    @location = Location.new(params[:location])
-  
-    if @location.save
-      @plan.location = @location
-    end
   
     respond_to do |format|
       if @plan.save
@@ -36,11 +32,6 @@ class PlansController < ApplicationController
   
   def edit
     @plan = Plan.find(params[:id])
-    if @plan.location.nil?
-      @location = Location.new
-    else
-      @location = @plan.location
-    end
   end
   
   def update

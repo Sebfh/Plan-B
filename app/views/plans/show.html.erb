@@ -1,6 +1,6 @@
 <% content_for :nav_action_left do %>
   <% if current_user %>	
-	  <%= link_to "Map", locations_path, :class => 'nav-button' %>
+	  <%= link_to "Map", map_path, :class => 'nav-button' %>
 	<% end %>
 <%end%>
 <% content_for :nav_action_right do %>
@@ -18,7 +18,6 @@
 	<% end %>
 </span>
 
-<p><% if @plan.location %>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=150x150&sensor=false&zoom=16&markers=#{@plan.location.latitude}%2C#{@plan.location.longitude}", :id => "location-small" %>
-<% end %>
+<p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=100x100&sensor=false&zoom=16&markers=#{@plan.latitude}%2C#{@plan.longitude}", :id => "location-small" %>
 <%= @plan.description %></p>

@@ -10,17 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110828084721) do
-
-  create_table "locations", :force => true do |t|
-    t.integer  "plan_id"
-    t.string   "address"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "gmaps"
-  end
+ActiveRecord::Schema.define(:version => 20110828121612) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
@@ -36,6 +26,10 @@ ActiveRecord::Schema.define(:version => 20110828084721) do
     t.datetime "starts_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
   end
 
   create_table "reactions", :force => true do |t|

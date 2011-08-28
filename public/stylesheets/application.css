@@ -103,10 +103,12 @@ a#signout {
   border-right-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent; }
-.plan-item span.when {
+.plan-item span.when, .plan-item span.address {
   font-size: 12px;
   color: #707070;
   line-height: 1em; }
+.plan-item span.address img {
+  vertical-align: text-top; }
 
 /* Calendar styling */
 .calendar {
