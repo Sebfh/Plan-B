@@ -8,21 +8,32 @@
 	  <%= link_to "Edit", edit_plan_path(@plan), :class => 'nav-button' %>
 	<% end %>
 <%end%>
-<div style="float:left;">
+
+<div style="float:left; text-align: center; margin:0px 5px;">
 	<%= image_tag "http://maps.google.com/maps/api/staticmap?size=100x100&sensor=false&zoom=11&markers=#{@plan.latitude}%2C#{@plan.longitude}", :id => "location-small" %>
-	<p><%=link_to 'yes', new_plan_reaction_path(@plan, :a => 'yes')%> <%=link_to 'no', new_plan_reaction_path(@plan, :a => 'no')%></p>
+	<br/>
+	<% if @plan.reactions.mine(current_user).length == 0 %>
+		<%=link_to 'Yes', new_plan_reaction_path(@plan, :a => 'yes'), :class => 'light-button' %> 
+		<%=link_to 'No', new_plan_reaction_path(@plan, :a => 'no'), :class => 'light-button' %>
+	<% end %>
 </div>
 
-<h2 style="display:inline;"><%= @plan.title %></h2>
+<h2 style="display:inline;">
+	<%= @plan.title %>
+</h2>
+
 <span class="when">
 	<% if Time.now > @plan.starts_at %>
-	<%= distance_of_time_in_words(Time.now, @plan.starts_at) %> ago, by <%= @plan.user.name %>
+		<%= distance_of_time_in_words(Time.now, @plan.starts_at) %> ago, by <%= @plan.user.name %>
 	<% else %>
-	in <%= distance_of_time_in_words(Time.now, @plan.starts_at) %>, by <%= @plan.user.name %>
+		in <%= distance_of_time_in_words(Time.now, @plan.starts_at) %>, by <%= @plan.user.name %>
 	<% end %>
 </span>
-<span class="emotion"><%= image_tag 'emoticon_smile.png', :class => 'emoticon' %> <%= @plan.reactions.positive.length %>
-<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon' %> <%= @plan.reactions.negative.length %></span>
 
-<%= @plan.description %></p>
+<span class="emotion">
+	<%= image_tag 'emoticon_smile.png', :class => 'emoticon' %> <%= @plan.reactions.positive.length %>
+	<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon' %> <%= @plan.reactions.negative.length %>
+</span>
+
+<p><%= @plan.description %></p>
 

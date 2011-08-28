@@ -143,8 +143,6 @@ span.when, span.address {
   margin-left: 45px; }
 
 img#location-small {
-  margin-right: 10px;
-  margin-top: 5px;
   padding: 6px;
   border-width: 1px;
   border-style: solid;
@@ -152,7 +150,8 @@ img#location-small {
   -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
   -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
   box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 5px; }
 
 .clearfix:after {
   visibility: hidden;
