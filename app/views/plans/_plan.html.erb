@@ -13,18 +13,25 @@
 		<%= link_to "", plan_path(plan) %> <!-- vervangen door een arrow img -->
 	</div>
   	<div class="desc">
-  		<h3><%= plan.title %></h3>
-  		<span class="when">
-			<% if Time.now > plan.starts_at %>
-			<%= distance_of_time_in_words(Time.now, plan.starts_at) %> ago
-			<% else %>
-			in <%= distance_of_time_in_words(Time.now, plan.starts_at) %>
-			<% end %>
-  		</span>
+  		<h3 style="display:inline;"><%= plan.title %></h3>
+			<span class="when">
+				<% if Time.now > plan.starts_at %>
+				 <%= distance_of_time_in_words(Time.now, plan.starts_at) %> ago
+				<% else %>
+				 in <%= distance_of_time_in_words(Time.now, plan.starts_at) %>
+				<% end %>
+	  		</span>
+			<span class="emotion">
+				<%= image_tag 'emoticon_smile.png', :class => 'emoticon' %> <%= plan.reactions.positive.length %>
+				<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon' %> <%= plan.reactions.negative.length %>
+			</span>
+  	
+	
   		<p><%= plan.description.truncate(95,:separator => ' ',:omission => "...") %></p>
 		<span class="address">
 			<%= image_tag('map.png') %> <%= plan.address %>
 		</span>
+		
   	</div>
 	
 </div>

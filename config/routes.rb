@@ -1,9 +1,10 @@
 Planb::Application.routes.draw do
-  resources :reactions
 
   resources :locations
 
-  resources :plans
+  resources :plans do
+    resources :reactions
+  end
 
   resources :users
 
@@ -17,6 +18,8 @@ Planb::Application.routes.draw do
   match "/map" => "plans#index", :as => :map
   
   root :to => "users#dashboard"
+  
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

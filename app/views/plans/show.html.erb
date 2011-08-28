@@ -8,8 +8,12 @@
 	  <%= link_to "Edit", edit_plan_path(@plan), :class => 'nav-button' %>
 	<% end %>
 <%end%>
+<div style="float:left;">
+	<%= image_tag "http://maps.google.com/maps/api/staticmap?size=100x100&sensor=false&zoom=11&markers=#{@plan.latitude}%2C#{@plan.longitude}", :id => "location-small" %>
+	<p><%=link_to 'yes', new_plan_reaction_path(@plan, :a => 'yes')%> <%=link_to 'no', new_plan_reaction_path(@plan, :a => 'no')%></p>
+</div>
 
-<h2><%= @plan.title %></h2>
+<h2 style="display:inline;"><%= @plan.title %></h2>
 <span class="when">
 	<% if Time.now > @plan.starts_at %>
 	<%= distance_of_time_in_words(Time.now, @plan.starts_at) %> ago, by <%= @plan.user.name %>
@@ -17,7 +21,8 @@
 	in <%= distance_of_time_in_words(Time.now, @plan.starts_at) %>, by <%= @plan.user.name %>
 	<% end %>
 </span>
+<span class="emotion"><%= image_tag 'emoticon_smile.png', :class => 'emoticon' %> <%= @plan.reactions.positive.length %>
+<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon' %> <%= @plan.reactions.negative.length %></span>
 
-<p>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=100x100&sensor=false&zoom=16&markers=#{@plan.latitude}%2C#{@plan.longitude}", :id => "location-small" %>
 <%= @plan.description %></p>
+

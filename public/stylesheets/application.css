@@ -107,6 +107,14 @@ a#signout {
 .plan-item span.address img {
   vertical-align: text-top; }
 
+span.emotion {
+  font-size: 12px;
+  color: #707070;
+  line-height: 1em;
+  display: block; }
+span.emotion img.emoticon {
+  vertical-align: text-top; }
+
 span.when, span.address {
   font-size: 12px;
   color: #707070;
@@ -135,7 +143,6 @@ span.when, span.address {
   margin-left: 45px; }
 
 img#location-small {
-  float: left;
   margin-right: 10px;
   margin-top: 5px;
   padding: 6px;

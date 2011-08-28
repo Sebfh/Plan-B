@@ -135,6 +135,17 @@ a#signout {
 		vertical-align: text-top;
 	}
 }
+span.emotion {
+	
+	font-size: 12px;
+	color: darken($main-color, 50%);
+	line-height: 1em;
+	display: block;
+	img.emoticon {
+		vertical-align: text-top;
+	}
+}
+
 span.when, span.address {
 	font-size: 12px;
 	color: darken($main-color, 50%);
@@ -168,17 +179,16 @@ span.when, span.address {
 .desc { margin-left: 45px;}
 
 img#location-small {
-	float:left;
 	margin-right:10px;
 	margin-top:5px;
 	padding: 6px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ccc #ccc #999 #ccc;
-  -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
-  -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
-  box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
-background-color: #fff;
+  	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ccc #ccc #999 #ccc;
+  	-webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  	-moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  	box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+	background-color: #fff;
 }
 
 
