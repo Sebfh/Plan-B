@@ -98,7 +98,7 @@ a#signout {
 }
 
 /* Plans part on dashboard */
-#plans { 
+#plans, #users { 
 	margin-top: 10px;
 	h2 {
 		color: #C2C2C2;
@@ -110,7 +110,7 @@ a#signout {
 	}
 	}
 	
-.plan-item {
+.plan-item, .attendee-item {
   	padding: 5px;
   	background: #fff;
   	border: 1px solid darken($main-color, 3%);

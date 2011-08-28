@@ -79,32 +79,32 @@ a#signout {
   border-bottom: 1px dotted gray; }
 
 /* Plans part on dashboard */
-#plans {
+#plans, #users {
   margin-top: 10px; }
-#plans h2 {
+#plans h2, #users h2 {
   color: #C2C2C2;
   padding: 5px 0;
   text-shadow: 0 1px 0 #FFFCFC; }
-#plans #filters {
+#plans #filters, #users #filters {
   float: right; }
 
-.plan-item {
+.plan-item, .attendee-item {
   padding: 5px;
   background: #fff;
   border: 1px solid #e8e8e8;
   margin-bottom: -1px; }
-.plan-item h3 {
+.plan-item h3, .attendee-item h3 {
   font-size: 14px; }
-.plan-item p {
+.plan-item p, .attendee-item p {
   font-size: 14px; }
-.plan-item div.linkr {
+.plan-item div.linkr, .attendee-item div.linkr {
   float: right;
   margin: 10px 10px 0;
   border: 6px solid #b0b0b0;
   border-right-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent; }
-.plan-item span.address img {
+.plan-item span.address img, .attendee-item span.address img {
   vertical-align: text-top; }
 
 span.emotion {

@@ -37,3 +37,8 @@
 
 <p><%= @plan.description %></p>
 
+<div id="users" style="clear:both;">
+	<h2>People attending</h2>
+	<%= render :partial => "attendees/attendee", :collection => @plan.attendees %>
+</div>
+
