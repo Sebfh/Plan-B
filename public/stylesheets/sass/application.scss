@@ -107,6 +107,22 @@ a#signout {
 }
 
 /* Plans part on dashboard */
+.map-image {
+  float:left;
+  text-align: center;
+  margin-right:5px;
+  margin-bottom: 0;
+}
+
+#content header h2 {
+  display: inline;
+}
+
+div#reaction h3 {
+  margin: 0 0 5px;
+  font-weight: normal;
+}
+
 #plans, #users { 
 	margin-top: 10px;
 	h2 {
@@ -116,21 +132,22 @@ a#signout {
 		}
 	#filters {
 		float:right;
-	}
+	  }
 	}
 	
 .plan-item, .attendee-item {
 	clear:both;
-  	padding: 5px;
-  	background: #fff;
-  	border: 1px solid darken($main-color, 3%);
-  	margin-bottom: -1px;
-  	h3 {
-    	font-size: 14px;
-  	}
-  	p 	{
-    	font-size: 14px;
-  	}
+  padding: 5px;
+	background: #fff;
+	border: 1px solid darken($main-color, 3%);
+	margin-bottom: -1px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0.1);
+	h3 {
+  	font-size: 14px;
+	}
+	p 	{
+  	font-size: 14px;
+	}
 	div.linkr { 
 		float:right;
 		margin: 10px 10px 0;
@@ -148,14 +165,14 @@ a#signout {
 .attendee-item {
 	min-height: 38px;
 }
-span.emotion {
+div.emotion {
 	
 	font-size: 12px;
 	color: darken($main-color, 50%);
 	line-height: 1em;
 	display: block;
 	img.emoticon {
-		vertical-align: text-top;
+	vertical-align: text-top;
 	}
 }
 
@@ -193,16 +210,15 @@ span.when, span.address {
 
 img#location-small {
 	padding: 6px;
-  	border-width: 1px;
-  	border-style: solid;
-  	border-color: #ccc #ccc #999 #ccc;
-  	-webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
-  	-moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
-  	box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc #ccc #999 #ccc;
+  -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+	-moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
 	background-color: #fff;
 	margin-bottom:5px;
 }
-
 
 .clearfix:after {
 	visibility: hidden;

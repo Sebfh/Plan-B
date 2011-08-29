@@ -88,6 +88,19 @@ a#signout {
   border-bottom: 1px dotted gray; }
 
 /* Plans part on dashboard */
+.map-image {
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 0; }
+
+#content header h2 {
+  display: inline; }
+
+div#reaction h3 {
+  margin: 0 0 5px;
+  font-weight: normal; }
+
 #plans, #users {
   margin-top: 10px; }
 #plans h2, #users h2 {
@@ -102,7 +115,8 @@ a#signout {
   padding: 5px;
   background: #fff;
   border: 1px solid #e8e8e8;
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
 .plan-item h3, .attendee-item h3 {
   font-size: 14px; }
 .plan-item p, .attendee-item p {
@@ -120,12 +134,12 @@ a#signout {
 .attendee-item {
   min-height: 38px; }
 
-span.emotion {
+div.emotion {
   font-size: 12px;
   color: #707070;
   line-height: 1em;
   display: block; }
-span.emotion img.emoticon {
+div.emotion img.emoticon {
   vertical-align: text-top; }
 
 span.when, span.address {

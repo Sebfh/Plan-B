@@ -9,19 +9,12 @@
 	<% end %>
 <%end%>
 
-<div style="float:left; text-align: center; margin:0px 5px;">
+<div class="map-image clearfix">
 	<%= image_tag "http://maps.google.com/maps/api/staticmap?size=100x100&sensor=false&zoom=11&markers=#{@plan.latitude}%2C#{@plan.longitude}", :id => "location-small" %>
-	<br/>
-	<% if @plan.reactions.mine(current_user).length == 0 %>
-		<%=link_to 'Yes', new_plan_reaction_path(@plan, :a => 'yes'), :class => 'light-button' %> 
-		<%=link_to 'No', new_plan_reaction_path(@plan, :a => 'no'), :class => 'light-button' %>
-	<% end %>
 </div>
 
-<h2 style="display:inline;">
-	<%= @plan.title %>
-</h2>
-
+<header class="clearfix">
+<h2><%= @plan.title %></h2>
 <span class="when">
 	<% if Time.now > @plan.starts_at %>
 		<%= distance_of_time_in_words(Time.now, @plan.starts_at) %> ago, by <%= @plan.user.name %>
@@ -29,15 +22,24 @@
 		in <%= distance_of_time_in_words(Time.now, @plan.starts_at) %>, by <%= @plan.user.name %>
 	<% end %>
 </span>
-
-<span class="emotion">
+<div class="emotion">
 	<%= image_tag 'emoticon_smile.png', :class => 'emoticon' %> <%= @plan.reactions.positive.length %>
 	<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon' %> <%= @plan.reactions.negative.length %>
-</span>
+</div>
+<div id="reaction">
+  <% if @plan.reactions.mine(current_user).length == 0 %>
+    <h3>Wanna go?</h3>
+	  <%=link_to 'Yes', new_plan_reaction_path(@plan, :a => 'yes'), :class => 'light-button' %> 
+	  <%=link_to 'No', new_plan_reaction_path(@plan, :a => 'no'), :class => 'light-button' %>
+	<% else %>
+	  <!-- If attending => you're attending else ... -->
+  <% end %>
+</div>
+</header>
 
 <p><%= @plan.description %></p>
 
-<div id="users" style="clear:both;">
+<div id="users">
 	<h2>People attending</h2>
 	<%= render :partial => "attendees/attendee", :collection => @plan.attendees %>
 </div>
