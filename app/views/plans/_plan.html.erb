@@ -21,10 +21,10 @@
 				 in <%= distance_of_time_in_words(Time.now, plan.starts_at) %>
 				<% end %>
 	  		</span>
-			<span class="emotion">
+			<div class="emotion">
 				<%= image_tag 'emoticon_smile.png', :class => 'emoticon' %> <%= plan.reactions.positive.length %>
 				<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon' %> <%= plan.reactions.negative.length %>
-			</span>
+			</div>
   	
 	
   		<p><%= plan.description.truncate(95,:separator => ' ',:omission => "...") %></p>
