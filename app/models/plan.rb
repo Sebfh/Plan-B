@@ -1,7 +1,6 @@
 class Plan < ActiveRecord::Base
   belongs_to :user
   has_many :reactions, :dependent => :destroy
-  #has_many :attendees, :through => :reactions, :class_name => "User"
   has_many :attendees, :through => :reactions, :source => :user
   
   validates_presence_of :title, :description, :starts_at, :address, :user_id

@@ -123,7 +123,7 @@ div#reaction h3 {
   font-weight: normal;
 }
 
-#plans, #users { 
+#plans, #users, #reactions { 
 	margin-top: 10px;
 	h2 {
 		color: #C2C2C2;
@@ -135,7 +135,7 @@ div#reaction h3 {
 	  }
 	}
 	
-.plan-item, .attendee-item {
+.plan-item, .attendee-item, .reaction-item {
 	clear:both;
   padding: 5px;
 	background: #fff;
@@ -162,7 +162,7 @@ div#reaction h3 {
 		vertical-align: text-top;
 	}	
 }
-.attendee-item {
+.attendee-item, .reaction-item {
 	min-height: 38px;
 }
 div.emotion {

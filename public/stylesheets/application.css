@@ -101,37 +101,37 @@ div#reaction h3 {
   margin: 0 0 5px;
   font-weight: normal; }
 
-#plans, #users {
+#plans, #users, #reactions {
   margin-top: 10px; }
-#plans h2, #users h2 {
+#plans h2, #users h2, #reactions h2 {
   color: #C2C2C2;
   padding: 5px 0;
   text-shadow: 0 1px 0 #FFFCFC; }
-#plans #filters, #users #filters {
+#plans #filters, #users #filters, #reactions #filters {
   float: right; }
 
-.plan-item, .attendee-item {
+.plan-item, .attendee-item, .reaction-item {
   clear: both;
   padding: 5px;
   background: #fff;
   border: 1px solid #e8e8e8;
   margin-bottom: -1px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
-.plan-item h3, .attendee-item h3 {
+.plan-item h3, .attendee-item h3, .reaction-item h3 {
   font-size: 14px; }
-.plan-item p, .attendee-item p {
+.plan-item p, .attendee-item p, .reaction-item p {
   font-size: 14px; }
-.plan-item div.linkr, .attendee-item div.linkr {
+.plan-item div.linkr, .attendee-item div.linkr, .reaction-item div.linkr {
   float: right;
   margin: 10px 10px 0;
   border: 6px solid #b0b0b0;
   border-right-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent; }
-.plan-item span.address img, .attendee-item span.address img {
+.plan-item span.address img, .attendee-item span.address img, .reaction-item span.address img {
   vertical-align: text-top; }
 
-.attendee-item {
+.attendee-item, .reaction-item {
   min-height: 38px; }
 
 div.emotion {

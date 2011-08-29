@@ -36,11 +36,12 @@
   <% end %>
 </div>
 </header>
-
+<div id="reactions">
+	<h2>Description</h2>
 <p><%= @plan.description %></p>
-
-<div id="users">
-	<h2>People attending</h2>
-	<%= render :partial => "attendees/attendee", :collection => @plan.attendees %>
+</div>
+<div id="reactions">
+	<h2>Reactions</h2>
+	<%= render @plan.reactions %>
 </div>
 

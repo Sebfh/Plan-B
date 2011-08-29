@@ -1,0 +1,10 @@
+<div class="reaction-item">
+	<%= image_tag(reaction.user.image_uri, :class => 'attendee-img') %>
+	<%= reaction.user.name %>
+	
+	<% if reaction.attending == true %>
+		<%= image_tag 'emoticon_smile.png', :class => 'emoticon', :style => 'float:right;' %>
+	<% else %>
+		<%= image_tag 'emoticon_unhappy.png', :class => 'emoticon', :style => 'float:right;' %>
+	<% end %>
+</div>
